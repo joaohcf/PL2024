@@ -34,8 +34,8 @@ for mod in modalidades:
 # 2. Percentagem de atletas aptos e inaptos
 print("\nPercentagem de atletas aptos e inaptos")
 print(f"Nº de atletas: {atletas}")
-print(f"Nº de atletas aptos: {aptidao.get('aptos')}")
-print(f"Nº de atletas inaptos: {aptidao.get('inaptos')}")
+print(f"Nº de atletas aptos: {aptidao.get('aptos')} ({aptidao.get('aptos')/atletas*100} %)")
+print(f"Nº de atletas inaptos: {aptidao.get('inaptos')} ({aptidao.get('inaptos')/atletas*100} %)")
 
 # 3. Distribuição de atletas por escalão etário
 print("\nDistribuição de atletas por escalão etário")
