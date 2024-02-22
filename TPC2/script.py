@@ -1,10 +1,10 @@
 import sys
 import re
 
-html = """
+html = f"""
 <html>
     <head>
-        <title>HTML Page</title>
+        <title>{sys.argv[1]}</title>
         <meta charset="utf-8">
     </head>
     <body>
@@ -56,6 +56,6 @@ html += """
     </body>
 </html>"""
 
-html_page = open("page.html", "w", encoding="utf-8")
+html_page = open(sys.argv[1].split(".")[0] + ".html", "w", encoding="utf-8")
 html_page.write(html)
 html_page.close()
