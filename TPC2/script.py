@@ -32,10 +32,10 @@ md = re.sub(r"^\s*\d+\.\s+(.+)$", r"<li>\1</li>", md, flags=re.MULTILINE)
 md = re.sub(r"((<li>.*</li>\n)+)", r"<ol>\n\1</ol>\n", md, flags=re.MULTILINE)
 
 # LISTA NÃO NUMERADA
-md = re.sub(r'^\s*-\s+(.+)$', r'<lo>\1</lo>', md, flags=re.MULTILINE)
-md = re.sub(r'((<lo>.*</lo>\n)+)', r'<ul>\n\1</ul>\n', md, flags=re.MULTILINE)
-md = re.sub(r'<lo>', r'<li>', md)
-md = re.sub(r'</lo>', r'</li>', md)
+md = re.sub(r'^\s*-\s+(.+)$', r'<x>\1</x>', md, flags=re.MULTILINE)
+md = re.sub(r'((<x>.*</x>\n)+)', r'<ul>\n\1</ul>\n', md, flags=re.MULTILINE)
+md = re.sub(r'<x>', r'<li>', md)
+md = re.sub(r'</x>', r'</li>', md)
 
 # CODE
 md = re.sub(r'`(.*)`', r'<code>\1</code>', md)
