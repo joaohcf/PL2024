@@ -1,4 +1,4 @@
-# Analisador Léxico
+# Analisador léxico
 
 Construir um analisador léxico para uma liguagem de query com a qual se podem escrever frases do género:
 
